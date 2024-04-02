@@ -6,7 +6,11 @@
     color: #fff;
     padding: 10px 20px;
   }
-  
+  Link{
+    color: #fff;
+    text-decoration: none;
+    list-style-type: none;
+  }
   .nav-logo2001 {
     font-size: 1.5rem;
   }

@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import './PopupForm.css'; // Import CSS file for styling
+import { Link } from 'react-router-dom';
 
-const PopupForm = ({ onClose }) => {
+const PopupForm = ({ onClose, loggedIn, setLoggedIn }) => {
   const [formData, setFormData] = useState({
     name: '',
     phoneNo: ''
@@ -22,12 +23,16 @@ const PopupForm = ({ onClose }) => {
     // Close the popup
     onClose();
   };
+  const formClose =(e)=>{
+    onClose()
+    setLoggedIn(true);
+  }
 
   return (
     <div className="popup2002">
-        
+
       <div className="popup-inner2002">
-      <button className="close-btn2002" onClick={onClose}>X</button>
+        <button className="close-btn2002" onClick={onClose}>X</button>
         <h2>Login</h2><hr></hr>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
@@ -38,7 +43,9 @@ const PopupForm = ({ onClose }) => {
             <label htmlFor="phoneNo">Phone Number:</label>
             <input type='number' id="phoneNo" name="phoneNo" placeholder='please enter your number' value={formData.phoneNo} onChange={handleChange} />
           </div>
-          <button type="submit">Submit</button>
+          <Link to="/components/AllData/AllData">
+            <button type="submit" onClick={formClose}>Submit</button>
+          </Link>
         </form>
       </div>
     </div>
