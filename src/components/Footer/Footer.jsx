@@ -1,37 +1,3 @@
-// import React from 'react';
-// import './Footer.css'; // Import your CSS file for styling
-// import crean from '../../images/crean.jpeg'
-
-// function Footer() {
-//   return (
-//     <footer className="footer">
-//       <div className="footer-content">
-//         <div className="footer-left">
-//           <span><img src={crean} alt='crean' style={{ height: "50px", width: "70px", borderRadius: "10px" }} /></span>
-//         </div>
-//         {/* <div className="footer-center">
-//           <h3>Quick Links</h3>
-//           <ul>
-//             <li><a href="/">Home</a></li>
-//             <li><a href="/about">About</a></li>
-//             <li><a href="/services">Services</a></li>
-//             <li><a href="/contact">Contact</a></li>
-//           </ul>
-//         </div> */}
-//         <div className="footer-right">
-//           <h3>Contact Us</h3>
-//           <p>Email: info@yourcompany.com</p>
-//           <p>Phone: +1234567890</p>
-//         </div>
-//       </div>
-//       <div className="footer-bottom">
-//         <p>&copy; {new Date().getFullYear()} Your Company. All rights reserved.</p>
-//       </div>
-//     </footer>
-//   );
-// }
-
-// export default Footer;
 
 import React from 'react';
 import './Footer.css'; // Import your CSS file for styling
@@ -48,13 +14,13 @@ function Footer() {
 
 
         <div className="footer-center">
-          <h3 style={{margin:'-5px 0'}}>Contact Us</h3>
-          <p style={{margin:'-5px 0'}}>Email: info@yourcompany.com</p>
-          <p style={{margin:'-5px 0'}}>Phone: +1234567890</p>
+          <h4 style={{margin:'-3px 0'}}>Contact Us</h4>
+          <p style={{margin:'-3px 0',fontSize:"15px"}}>Email: info@yourcompany.com</p>
+          <p style={{margin:'-3px 0',fontSize:"15px"}}>Phone no: +9666155966</p>
          </div>
         <div className="footer-right" >
          <a href="#"> <img className="mg-srci-2" src='https://download.logo.wine/logo/Instagram/Instagram-Logo.wine.png' /></a>
-         <a href="#"><img  className="mg-srci-2" src='https://www.pngguru.in/storage/uploads/images/Facebook%20icon%20png%20transparent_1657731707_37226539.webp' /></a>  
+         <a href="#"><img  className="mg-srci-3" src='https://png.pngtree.com/png-clipart/20190516/original/pngtree-facebook-icon-png-image_3566127.png' /></a>  
        
         </div>
       </div>

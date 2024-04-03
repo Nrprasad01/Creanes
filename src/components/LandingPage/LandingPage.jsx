@@ -9,8 +9,7 @@ const LandingPage = () => {
         <>
             <div>
                 {
-                    <>
-                        
+                    <>                     
                         <HomePage />
                     </>
                 }
