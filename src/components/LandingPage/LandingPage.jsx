@@ -12,8 +12,6 @@ const LandingPage = () => {
                     <>
                         
                         <HomePage />
-                             {/* <AllData /> */}
-                        {/* <Footer /> */}
                     </>
                 }
             </div>
