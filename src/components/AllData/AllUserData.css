@@ -1,9 +1,8 @@
 /* AllUserData.css */
 
 .form-container {
-    max-width: 600px;
+    max-width: 400px;
     margin: 0 auto;
-    margin-top: 2%;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -18,7 +17,9 @@
     justify-content: space-between;
   }
   
-  
+  .form-group {
+    width: 48%;
+  }
   
   .form-group {
     margin-bottom: 20px;
