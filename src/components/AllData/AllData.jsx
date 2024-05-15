@@ -66,7 +66,7 @@ const AllData = () => {
                         <thead>
                             <tr>
                                 <th>Name</th>
-                                <th>UserNo</th>
+                                <th>VehicleNo</th>
                                 <th>Earn</th>
                                 <th>Expense</th>
                                 <th>Date</th>

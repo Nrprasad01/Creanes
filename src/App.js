@@ -28,6 +28,7 @@ import LandingPage from './components/LandingPage/LandingPage';
 import AllData from './components/AllData/AllData';
 import HeaderSelect from './components/headerSelection/HeaderSelect';
 import Footer from './components/Footer/Footer';
+import AllUserData from './components/AllData/AllUserData';
 
 
 const App = () => {
@@ -38,6 +39,7 @@ const App = () => {
         <Routes>
           <Route path='/' element={<LandingPage />} />
           <Route path='/components/AllData/AllData' element={<AllData />} />
+          <Route path='/components/AllData/AllUserData' element={<AllUserData />} />
         </Routes>
         {<Footer/>}
       </BrowserRouter>

@@ -43,9 +43,14 @@ const PopupForm = ({ onClose, loggedIn, setLoggedIn }) => {
             <label htmlFor="phoneNo">Phone Number:</label>
             <input type='number' id="phoneNo" name="phoneNo" placeholder='please enter your number' value={formData.phoneNo} onChange={handleChange} />
           </div>
-          <Link to="/components/AllData/AllData">
+          {
+            formData.name==="admin" ?<Link to="/components/AllData/AllData">
+            <button type="submit" onClick={formClose}>Submit</button>
+          </Link>:<Link to="/components/AllData/AllUserData">
             <button type="submit" onClick={formClose}>Submit</button>
           </Link>
+          }
+          
         </form>
       </div>
     </div>

@@ -24,12 +24,7 @@ const HeaderSelect = () => {
                     <span>FRIENDS CRANES</span>
                     </Link>
                 </div>
-                <ul className="nav-links2001">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+               
                 {loggedIn ? (
                     <Link to="./">
                     <button className='login2001' onClick={handleLogout}>LogOut</button>
