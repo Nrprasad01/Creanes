@@ -41,7 +41,7 @@ const AllUserData = () => {
       <h2 className="title"> <span style={{color:"orange"}}>W</span>elcome User</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group-row">
-          <div className="form-group">
+          <div className="form-group-half">
             <label htmlFor="name">Name:</label>
             <input
               type="text"
@@ -51,7 +51,7 @@ const AllUserData = () => {
               onChange={handleChange}
             />
           </div>
-          <div className="form-group">
+          <div className="form-group-half">
             <label htmlFor="vehicleNo">Vehicle Number:</label>
             <input
               type="number"
@@ -63,7 +63,7 @@ const AllUserData = () => {
           </div>
         </div>
         <div className="form-group-row">
-          <div className="form-group">
+          <div className="form-group-half">
             <label htmlFor="earnings">Earnings:</label>
             <input
               style={{background:"green",color:"#fff"}}
@@ -74,7 +74,7 @@ const AllUserData = () => {
               onChange={handleChange}
             />
           </div>
-          <div className="form-group">
+          <div className="form-group-half">
             <label htmlFor="expenses">Expenses:</label>
             <input
              style={{background:"red",color:"#fff"}}
