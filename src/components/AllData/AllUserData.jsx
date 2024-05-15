@@ -66,7 +66,7 @@ const AllUserData = () => {
           <div className="form-group">
             <label htmlFor="earnings">Earnings:</label>
             <input
-              style={{background:"light-green",color:"#fff"}}
+              style={{background:"green",color:"#fff"}}
               type="number"
               id="earnings"
               name="earnings"
