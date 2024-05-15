@@ -22,16 +22,26 @@ const AllUserData = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    setFormData({
+      name: '',
+      vehicleNo: '',
+      earnings: '',
+      expenses: '',
+      date: '',
+      work: ''
+    })
+    alert("data submitted sucessful")
     // Handle form submission here
     console.log(formData); // For demonstration, you can replace this with your actual form submission logic
   };
 
   return (
     <div className="form-container">
-      <h3 className="title">Welcome User</h3>
+      <h2 className="title"> <span style={{color:"orange"}}>W</span>elcome User</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group-row">
-          <div className="form-group-half">
+          <div className="form-group">
             <label htmlFor="name">Name:</label>
             <input
               type="text"
@@ -41,10 +51,10 @@ const AllUserData = () => {
               onChange={handleChange}
             />
           </div>
-          <div className="form-group-half">
+          <div className="form-group">
             <label htmlFor="vehicleNo">Vehicle Number:</label>
             <input
-              type="text"
+              type="number"
               id="vehicleNo"
               name="vehicleNo"
               value={formData.vehicleNo}
@@ -53,20 +63,22 @@ const AllUserData = () => {
           </div>
         </div>
         <div className="form-group-row">
-          <div className="form-group-half">
+          <div className="form-group">
             <label htmlFor="earnings">Earnings:</label>
             <input
-              type="text"
+              style={{background:"light-green",color:"#fff"}}
+              type="number"
               id="earnings"
               name="earnings"
               value={formData.earnings}
               onChange={handleChange}
             />
           </div>
-          <div className="form-group-half">
+          <div className="form-group">
             <label htmlFor="expenses">Expenses:</label>
             <input
-              type="text"
+             style={{background:"red",color:"#fff"}}
+              type="number"
               id="expenses"
               name="expenses"
               value={formData.expenses}
@@ -74,25 +86,28 @@ const AllUserData = () => {
             />
           </div>
         </div>
-        <div className="form-group">
-          <label htmlFor="date">Date:</label>
-          <input
-            type="date"
-            id="date"
-            name="date"
-            value={formData.date}
-            onChange={handleChange}
-          />
-        </div>
-        <div className="form-group">
-          <label htmlFor="work">Work:</label>
-          <textarea
-            id="work"
-            name="work"
-            value={formData.work}
-            onChange={handleChange}
-          />
-        </div>
+        
+          <div className="form-group">
+            <label htmlFor="date">Date:</label>
+            <input 
+            style={{height:"50px"}}
+              type="date"
+              id="date"
+              name="date"
+              value={formData.date}
+              onChange={handleChange}
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="work">Work:</label>
+            <textarea
+              id="work"
+              name="work"
+              value={formData.work}
+              onChange={handleChange}
+            />
+          </div>
+       
         <button type="submit" className="submit-button">Submit</button>
       </form>
     </div>
